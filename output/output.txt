@@ -1,0 +1,1 @@
+/summon villager ~ ~1 ~ {VillagerData:{profession:farmer,level:99,type:plains},PersistenceRequired:1,Offers:{Recipes:[{buy:{id:diamond,Count:1},sell:{id:enchanted_book,Count:1,tag:{StoredEnchantments:[{id:aqua_affinity,lvl:1}]}},maxUses:9999999},{buy:{id:dirt,Count:3},sell:{id:enchanted_book,Count:1,tag:{StoredEnchantments:[{id:mending,lvl:1}]}},maxUses:9999999},{}]}}

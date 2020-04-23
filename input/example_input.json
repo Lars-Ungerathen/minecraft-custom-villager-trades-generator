@@ -1,0 +1,15 @@
+{
+    "1": {
+        "buys": {
+            "item": "diamond",
+            "count": 1
+        },
+        "sells": {
+            "item": "enchanted_book",
+            "count": 1
+        },
+        "enchantments": {
+            "aqua_affinity": 1
+        }
+    }
+}

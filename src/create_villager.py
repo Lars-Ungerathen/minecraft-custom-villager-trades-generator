@@ -1,4 +1,5 @@
 from random import randrange
+import json
 
 def get_spacer():
     return "},{"
@@ -45,22 +46,15 @@ def create_villager(items_for_trade):
         villager = villager + create_sales(items_for_trade[item_key]["sells"]["item"],items_for_trade[item_key]["sells"]["count"],items_enchantments) + get_spacer()
 
     villager = villager + get_end()
-    print(villager)
+    
+    with open('../output/output.txt','w+') as output_file:
+        output_file.write(villager)
 
-all_items = {
-    "1":{
-        "buys":{
-            "item":"diamond",
-            "count":1
-        },
-        "sells":{
-            "item":"enchanted_book",
-            "count":1
-        },
-        "enchantments":{
-            "aqua_affinity":1
-        }
-    }
-}
-create_villager(all_items)
+def main():
+    with open('../input/input.json') as input_file:
+        villager_data = json.load(input_file)
 
+    create_villager(villager_data)
+
+if __name__ == "__main__":
+    main()
