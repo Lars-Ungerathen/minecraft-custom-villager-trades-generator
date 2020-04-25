@@ -6,33 +6,34 @@ Input all desired trades into `/input/input.json`. A working example can be foun
 
 ```json
 "villagers": [
-        {
-            "info": {
-                "profession": "<profession>",
-                "type": "<minecraft_biome>"
-            },
-            "trades": [
-                {
-                    "buys": [
-                        {
-                            "item": "<item_name>",
-                            "count": <count>
-                        },
-                        {
-                            "item": "<item_name>",
-                            "count": <count>
-                        }
-                    ],
-                    "sells": {
-                        "item": "enchanted_book",
+    {
+        "info": {
+            "profession": "<profession>",
+            "type": "<minecraft_biome>"
+        },
+        "trades": [
+            {
+                "buys": [
+                    {
+                        "item": "<item_name>",
                         "count": <count>
                     },
-                    "enchantments": {
-                        "<enchantment_name>": <count>
+                    {
+                        "item": "<item_name>",
+                        "count": <count>
                     }
+                ],
+                "sells": {
+                    "item": "enchanted_book",
+                    "count": <count>
+                },
+                "enchantments": {
+                    "<enchantment_name>": <count>
                 }
-            ]
-        }
+            }
+        ]
+    }
+]
 ```
 
 `minecraft_item_name`: The minecraft item name of the item the villager should buy / sell
