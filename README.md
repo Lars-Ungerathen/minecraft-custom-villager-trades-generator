@@ -28,15 +28,18 @@ Input all desired trades into `/input/input.json`. A working example can be foun
                     "count": <count>
                 },
                 "enchantments": {
-                    "<enchantment_name>": <count>
+                    "<enchantment_name>": <enchantment_level>
                 }
             }
         ]
     }
 ]
 ```
+`profession`: Villager profession, must be one of the following: `["farmer","fisherman","shepherd","librarian","cartographer","cleric","armorer","weaponsmith","toolsmith","butcher","leatherworker","mason","nitwit"]`
 
-`minecraft_item_name`: The minecraft item name of the item the villager should buy / sell
+`minecraft_biome`: Biome, must be one of the following: `["plains","taiga","savanna","jungle","desert","snow","swamp"]`
+
+`item_name`: The minecraft item name of the item the villager should buy / sell
 
 `count`: The amount of items that the villager will buy / sell
 
